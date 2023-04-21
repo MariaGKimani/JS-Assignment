@@ -1,12 +1,12 @@
-let grocery = ["Onions","Tomatoes","Oranges","bananas","Mangoes","potatoes"]
-let groceryQuantitys = {
-    "Onions": 24,
-    "Tomatoes": 30,
-    "Oranges": 50,
-    "bananas": 70,
-    "Mangoes": 100,
-    "Potatoes":60,
-}
+// let grocery = ["Onions","Tomatoes","Oranges","bananas","Mangoes","potatoes"]
+// let groceryQuantitys = {
+//     "Onions": 24,
+//     "Tomatoes": 30,
+//     "Oranges": 50,
+//     "bananas": 70,
+//     "Mangoes": 100,
+//     "Potatoes":60,
+// }
 // Create an array containing the names of all items in the inventory.
 let groceryItems = [];
 // Create a separate array with the corresponding stock quantities of each item.
@@ -44,7 +44,7 @@ console.log(totalNumber());
 const lowestQuantity = () =>{
     let lowestQuantIndex = 0;
     for (let x = 0; x < groceryQuantities.length; x++) {
-        if (stockQuantities[x]<stockQuantities[lowestQuantIndex]) {
+        if (groceryQuantities[x]< groceryQuantities[lowestQuantIndex]) {
             lowestQuantIndex=x;
         }
     }
