@@ -1,12 +1,3 @@
-// let grocery = ["Onions","Tomatoes","Oranges","bananas","Mangoes","potatoes"]
-// let groceryQuantitys = {
-//     "Onions": 24,
-//     "Tomatoes": 30,
-//     "Oranges": 50,
-//     "bananas": 70,
-//     "Mangoes": 100,
-//     "Potatoes":60,
-// }
 // Create an array containing the names of all items in the inventory.
 let groceryItems = [];
 // Create a separate array with the corresponding stock quantities of each item.
