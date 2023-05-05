@@ -1,8 +1,8 @@
-// 1) Create a Car class or function constructor that has the following properties:
-// a. make (string): The make of the car, e.g., "Toyota".
-// b. model (string): The model of the car, e.g., "Camry".
-// c. year (number): The year the car was manufactured, e.g., 2020.
-// d. isAvailable (boolean): Indicates if the car is currently available for rent.
+// // 1) Create a Car class or function constructor that has the following properties:
+// // a. make (string): The make of the car, e.g., "Toyota".
+// // b. model (string): The model of the car, e.g., "Camry".
+// // c. year (number): The year the car was manufactured, e.g., 2020.
+// // d. isAvailable (boolean): Indicates if the car is currently available for rent.
 
 class Car{
     constructor(make,model,year,isAvailable){
@@ -25,13 +25,13 @@ console.log(car1);
 car2.toggleAvailability()
 console.log(car2);
 
-// Create a Rental class or function constructor that has the following properties:
-// ● car (Car object): The car that has been rented.
-// ● renterName (string): The name of the person who rented the car.
-// ● rentalStartDate (Date object): The start date of the rental period.
-// ● rentalEndDate (Date object): The end date of the rental period.
-// The Rental class or function constructor should also have a method called
-// calculateRentalDuration that returns the rental duration in days.
+// // Create a Rental class or function constructor that has the following properties:
+// // ● car (Car object): The car that has been rented.
+// // ● renterName (string): The name of the person who rented the car.
+// // ● rentalStartDate (Date object): The start date of the rental period.
+// // ● rentalEndDate (Date object): The end date of the rental period.
+// // The Rental class or function constructor should also have a method called
+// // calculateRentalDuration that returns the rental duration in days.
 
 class Rental {
     constructor(car,renterName,rentalStartDate,rentalEndDate){
@@ -87,9 +87,48 @@ class Question {
         this.options = options
         this.correctAnswer = correctAnswer
     }
+    checkAnswer(userAnswer){
+        if(userAnswer ==this.correctAnswer){
+            return true
+        }
+    }
 }
+let question = new Question('Maria',['single','Married','taken'],true)
+console.log({question});
+console.log(question.checkAnswer());
+
+// Create a Quiz class with the following properties:
+// ● questions(array):An array of Question objects.
+// ● currentQuestionIndex(number): The index of the current question in the
+// questions array.
+// ● score(number): The user’s current score.
 
 
+class Quiz{
+    constructor(questions,currentQuestionIndex,score){
+        this.questions = questions;
+        this.currentQuestionIndex = currentQuestionIndex;
+        this.score =score;
+
+    }
+    addQuestion(qstn){
+        this.questions.push(qstn)
+    }
+    nextQuestion(){
+        this.currentQuestionIndex ++;
+    }
+    submitAnswer(userAnswer){
+        if(currentQuestionIndex.checkAnswer(userAnswer) === true){
+            return score ++
+        }
+    }
+}
+let quiz = new Quiz(["hi","how are you","how have you been"],34,32)
+console.log({quiz});
+
+console.log(quiz.addQuestion());
+console.log(quiz.nextQuestion());
+console.log(quiz.ad());
 
 
 
