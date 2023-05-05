@@ -38,18 +38,26 @@ const products = [
   { name: 'Shoes', price: 60, category: 'Clothing' },
 ];
 
-function separate(products) {
-  const separated = {};
-  products.forEach(function(product) {
-    if (separated[product.category]) {
-      separated[product.category].push(product);
-    } else {
-      separated[product.category] = [product];
-    }
-  });
-  return separated;
+function categories(products){
+  const x = {}
+  for(product of products){
+    
+
+  }
 }
-console.log(separate(products));
+
+// function separate(products) {
+//   const separated = {};
+//   products.forEach(function(product) {
+//     if (separated[product.category]) {
+//       separated[product.category].push(product);
+//     } else {
+//       separated[product.category] = [product];
+//     }
+//   });
+//   return separated;
+// }
+// console.log(separate(products));
 
 
 // Given an array of objects, where each object represents a student
